@@ -1,0 +1,269 @@
+<!doctype html>
+<html>
+	<font face="Arial">
+	<body style="backround-color:rgb(255,255,255)">
+	<p>
+		<h3 align="center"><font size="5">Tabelle relative alle associazioni</font></h3><br>
+	</p>
+	
+	<p>
+	<h3 align="center" <div style="margin-bottom:0px;"></div>ASSOCIAZIONE GESTISCE</h3>
+	</p>
+		<table align="center" cellpadding="10" cellspacing="0">
+			<tr>
+				<td style="background-color:rgb(255, 255, 255)"><font color ="white"><b>NOME</b></font></td>
+				<td style="background-color:rgb(15, 5, 66)"><font color ="white"><b>MIN</b></font></td>
+				<td style="background-color:rgb(15, 5, 66)"><font color ="white"><b>MAX</b></font></td>
+			</tr>
+			<tr>
+				<td style="background-color:rgb(15, 5, 66)"><font color="white"><b>DIRETTA</b></font></td>
+				<td style="border: 1px solid" style="background-color:rgb(255, 255, 255)">1</td>
+				<td style="border: 1px solid" style="background-color:rgb(255, 255, 255)">1</td>
+			</tr>
+			<tr>
+				<td style="background-color:rgb(15, 5, 66)"><font color="white"><b>INVERSA</b></font></td>
+				<td style="border: 1px solid" style="background-color:rgb(255, 255, 255)">1</td>
+				<td style="border: 1px solid" style="background-color:rgb(255, 255, 255)">1</td>
+			</tr>
+		</table>
+	<p>
+	<h3 align="center"><font color="#0f0542">direttore </font><font color="#ed9909"><b>GESTISCE </font></b><font color="#0f0542">sede</font> >>> TIPO: <b>1:1</b></h4>
+	<h4 align="justify" <div style="margin-left:300px; margin-right:300px;"></div>Un direttore gestisce al massimo una sede (obbligatorio) e una sede è gestita da un solo direttore (obbligatorio) </h4>
+	</p>
+
+	<br><br><br>
+
+	<p>
+	<h3 align="center" <div style="margin-bottom:0px;"></div>ASSOCIAZIONE ASSUME</h3>
+	</p>
+		<table align="center" cellpadding="10" cellspacing="0">
+			<tr>
+				<td style="background-color:rgb(255, 255, 255)"><font color ="white"><b>NOME</b></font></td>
+				<td style="background-color:rgb(15, 5, 66)"><font color ="white"><b>MIN</b></font></td>
+				<td style="background-color:rgb(15, 5, 66)"><font color ="white"><b>MAX</b></font></td>
+			</tr>
+			<tr>
+				<td style="background-color:rgb(15, 5, 66)"><font color="white"><b>DIRETTA</b></font></td>
+				<td style="border: 1px solid" style="background-color:rgb(255, 255, 255)">1</td>
+				<td style="border: 1px solid" style="background-color:rgb(255, 255, 255)">N</td>
+			</tr>
+			<tr>
+				<td style="background-color:rgb(15, 5, 66)"><font color="white"><b>INVERSA</b></font></td>
+				<td style="border: 1px solid" style="background-color:rgb(255, 255, 255)">1</td>
+				<td style="border: 1px solid" style="background-color:rgb(255, 255, 255)">1</td>
+			</tr>
+		</table>
+	<p>
+	<h3 align="center"><font color="#0f0542">direttore </font><font color="#ed9909"><b>ASSUME </font></b><font color="#0f0542">impiegato</font> >>> TIPO: <b>1:N</b></h4>
+	
+	<h4 align="justify" <div style="margin-left:300px; margin-right:300px;"></div>Il direttore assume uno o più impiegati (obbligatorio) e un impiegato viene assunto da un solo direttore (obbligatorio)</h4>
+	</p>
+
+	<br><br><br>
+
+	<p>
+	<h3 align="center" <div style="margin-bottom:0px;"></div>ASSOCIAZIONE LAVORA</h3>
+	</p>
+		<table align="center" cellpadding="10" cellspacing="0">
+			<tr>
+				<td style="background-color:rgb(255, 255, 255)"><font color ="white"><b>NOME</b></font></td>
+				<td style="background-color:rgb(15, 5, 66)"><font color ="white"><b>MIN</b></font></td>
+				<td style="background-color:rgb(15, 5, 66)"><font color ="white"><b>MAX</b></font></td>
+			</tr>
+			<tr>
+				<td style="background-color:rgb(15, 5, 66)"><font color="white"><b>DIRETTA</b></font></td>
+				<td style="border: 1px solid" style="background-color:rgb(255, 255, 255)">1</td>
+				<td style="border: 1px solid" style="background-color:rgb(255, 255, 255)">1</td>
+			</tr>
+			<tr>
+				<td style="background-color:rgb(15, 5, 66)"><font color="white"><b>INVERSA</b></font></td>
+				<td style="border: 1px solid" style="background-color:rgb(255, 255, 255)">1</td>
+				<td style="border: 1px solid" style="background-color:rgb(255, 255, 255)">N</td>
+			</tr>
+		</table>
+	<p>
+	<h3 align="center"><font color="#0f0542">impiegato </font><font color="#ed9909"><b>LAVORA </font></b><font color="#0f0542">negozio</font> >>> TIPO: <b>1:N</b></h4>
+	
+	<h4 align="justify" <div style="margin-left:300px; margin-right:300px;"></div>Un impiegato lavora in al massimo in un negozio (obbligatorio) ed in un negozio possono lavorare più impiegati (obbligatorio)</h4>
+	</p>
+
+	<br><br><br>
+
+	<p>
+	<h3 align="center" <div style="margin-bottom:0px;"></div>ASSOCIAZIONE PAGA</h3>
+	</p>
+		<table align="center" cellpadding="10" cellspacing="0">
+			<tr>
+				<td style="background-color:rgb(255, 255, 255)"><font color ="white"><b>NOME</b></font></td>
+				<td style="background-color:rgb(15, 5, 66)"><font color ="white"><b>MIN</b></font></td>
+				<td style="background-color:rgb(15, 5, 66)"><font color ="white"><b>MAX</b></font></td>
+			</tr>
+			<tr>
+				<td style="background-color:rgb(15, 5, 66)"><font color="white"><b>DIRETTA</b></font></td>
+				<td style="border: 1px solid" style="background-color:rgb(255, 255, 255)">1</td>
+				<td style="border: 1px solid" style="background-color:rgb(255, 255, 255)">N</td>
+			</tr>
+			<tr>
+				<td style="background-color:rgb(15, 5, 66)"><font color="white"><b>INVERSA</b></font></td>
+				<td style="border: 1px solid" style="background-color:rgb(255, 255, 255)">1</td>
+				<td style="border: 1px solid" style="background-color:rgb(255, 255, 255)">1</td>
+			</tr>
+		</table>
+	<p>
+	<h3 align="center"><font color="#0f0542">sede </font><font color="#ed9909"><b>PAGA </font></b><font color="#0f0542">impiegato</font> >>> TIPO: <b>1:N</b></h4>
+	
+	<h4 align="justify" <div style="margin-left:300px; margin-right:300px;"></div>La sede paga uno o più impiegati (obbligatorio) e un impiegato viene pagato da una sola sede (obbligatorio)</h4>
+	</p>
+
+	<br><br><br>
+
+	<p>
+	<h3 align="center" <div style="margin-bottom:0px;"></div>ASSOCIAZIONE INVIA DENARO</h3>
+	</p>
+		<table align="center" cellpadding="10" cellspacing="0">
+			<tr>
+				<td style="background-color:rgb(255, 255, 255)"><font color ="white"><b>NOME</b></font></td>
+				<td style="background-color:rgb(15, 5, 66)"><font color ="white"><b>MIN</b></font></td>
+				<td style="background-color:rgb(15, 5, 66)"><font color ="white"><b>MAX</b></font></td>
+			</tr>
+			<tr>
+				<td style="background-color:rgb(15, 5, 66)"><font color="white"><b>DIRETTA</b></font></td>
+				<td style="border: 1px solid" style="background-color:rgb(255, 255, 255)">0</td>
+				<td style="border: 1px solid" style="background-color:rgb(255, 255, 255)">1</td>
+			</tr>
+			<tr>
+				<td style="background-color:rgb(15, 5, 66)"><font color="white"><b>INVERSA</b></font></td>
+				<td style="border: 1px solid" style="background-color:rgb(255, 255, 255)">0</td>
+				<td style="border: 1px solid" style="background-color:rgb(255, 255, 255)">N</td>
+			</tr>
+		</table>
+	<p>
+	<h3 align="center"><font color="#0f0542">negozio </font><font color="#ed9909"><b>INVIA DENARO </font></b><font color="#0f0542">sede</font> >>> TIPO: <b>1:N</b></h4>
+	
+	<h4 align="justify" <div style="margin-left:300px; margin-right:300px;"></div>Un negozio invia il denaro ad una sola sede (facoltativo) e la sede riceve il denaro da più negozi (facoltativo)</h4>
+	</p>
+
+	<br><br><br>
+
+	<p>
+	<h3 align="center" <div style="margin-bottom:0px;"></div>ASSOCIAZIONE POSSIEDE</h3>
+	</p>
+		<table align="center" cellpadding="10" cellspacing="0">
+			<tr>
+				<td style="background-color:rgb(255, 255, 255)"><font color ="white"><b>NOME</b></font></td>
+				<td style="background-color:rgb(15, 5, 66)"><font color ="white"><b>MIN</b></font></td>
+				<td style="background-color:rgb(15, 5, 66)"><font color ="white"><b>MAX</b></font></td>
+			</tr>
+			<tr>
+				<td style="background-color:rgb(15, 5, 66)"><font color="white"><b>DIRETTA</b></font></td>
+				<td style="border: 1px solid" style="background-color:rgb(255, 255, 255)">0</td>
+				<td style="border: 1px solid" style="background-color:rgb(255, 255, 255)">N</td>
+			</tr>
+			<tr>
+				<td style="background-color:rgb(15, 5, 66)"><font color="white"><b>INVERSA</b></font></td>
+				<td style="border: 1px solid" style="background-color:rgb(255, 255, 255)">1</td>
+				<td style="border: 1px solid" style="background-color:rgb(255, 255, 255)">1</td>
+			</tr>
+		</table>
+	<p>
+	<h3 align="center"><font color="#0f0542">negozio </font><font color="#ed9909"><b>POSSIEDE </font></b><font color="#0f0542">capo</font> >>> TIPO: <b>1:N</b></h4>
+	
+	<h4 align="justify" <div style="margin-left:300px; margin-right:300px;"></div>Un negozio possiede più capi (facoltativo) ed i capi appartengono ad un solo negozio (obbligatorio)</h4>
+	</p>
+
+	<br><br><br>
+
+	<p>
+	<h3 align="center" <div style="margin-bottom:0px;"></div>ASSOCIAZIONE EFFETTUATO PRESSO</h3>
+	</p>
+		<table align="center" cellpadding="10" cellspacing="0">
+			<tr>
+				<td style="background-color:rgb(255, 255, 255)"><font color ="white"><b>NOME</b></font></td>
+				<td style="background-color:rgb(15, 5, 66)"><font color ="white"><b>MIN</b></font></td>
+				<td style="background-color:rgb(15, 5, 66)"><font color ="white"><b>MAX</b></font></td>
+			</tr>
+			<tr>
+				<td style="background-color:rgb(15, 5, 66)"><font color="white"><b>DIRETTA</b></font></td>
+				<td style="border: 1px solid" style="background-color:rgb(255, 255, 255)">1</td>
+				<td style="border: 1px solid" style="background-color:rgb(255, 255, 255)">1</td>
+			</tr>
+			<tr>
+				<td style="background-color:rgb(15, 5, 66)"><font color="white"><b>INVERSA</b></font></td>
+				<td style="border: 1px solid" style="background-color:rgb(255, 255, 255)">0</td>
+				<td style="border: 1px solid" style="background-color:rgb(255, 255, 255)">N</td>
+			</tr>
+		</table>
+	<p>
+	<h3 align="center"><font color="#0f0542">acquisto </font><font color="#ed9909"><b>EFFETTUATO PRESSO </font></b><font color="#0f0542">negozio</font> >>> TIPO: <b>1:N</b></h4>
+	
+	<h4 align="justify" <div style="margin-left:300px; margin-right:300px;"></div>Un acquisto è effettuato presso un solo negozio (obbligatorio) e presso i negozi possono venire effettuati più acquisti (facoltativo)</h4>
+	</p>
+
+	<br><br><br>
+
+	<p>
+	<h3 align="center" <div style="margin-bottom:0px;"></div>ASSOCIAZIONE REGISTRATO</h3>
+	</p>
+		<table align="center" cellpadding="10" cellspacing="0">
+			<tr>
+				<td style="background-color:rgb(255, 255, 255)"><font color ="white"><b>NOME</b></font></td>
+				<td style="background-color:rgb(15, 5, 66)"><font color ="white"><b>MIN</b></font></td>
+				<td style="background-color:rgb(15, 5, 66)"><font color ="white"><b>MAX</b></font></td>
+			</tr>
+			<tr>
+				<td style="background-color:rgb(15, 5, 66)"><font color="white"><b>DIRETTA</b></font></td>
+				<td style="border: 1px solid" style="background-color:rgb(255, 255, 255)">1</td>
+				<td style="border: 1px solid" style="background-color:rgb(255, 255, 255)">1</td>
+			</tr>
+			<tr>
+				<td style="background-color:rgb(15, 5, 66)"><font color="white"><b>INVERSA</b></font></td>
+				<td style="border: 1px solid" style="background-color:rgb(255, 255, 255)">0</td>
+				<td style="border: 1px solid" style="background-color:rgb(255, 255, 255)">N</td>
+			</tr>
+		</table>
+	<p>
+	<h3 align="center"><font color="#0f0542">cliente tesserato </font><font color="#ed9909"><b>REGISTRATO </font></b><font color="#0f0542">negozio</font> >>> TIPO: <b>1:N</b></h4>
+	
+	<h4 align="justify" <div style="margin-left:300px; margin-right:300px;"></div>Un cliente tesserato è registrato presso un solo negozio (obbligatorio) e presso i negozi ci possono essere più clienti tesserati (facoltativo)</h4>
+	</p>
+
+	<br><br><br>
+
+	<p>
+	<h3 align="center" <div style="margin-bottom:0px;"></div>ASSOCIAZIONE POSSIEDE</h3>
+	</p>
+		<table align="center" cellpadding="10" cellspacing="0">
+			<tr>
+				<td style="background-color:rgb(255, 255, 255)"><font color ="white"><b>NOME</b></font></td>
+				<td style="background-color:rgb(15, 5, 66)"><font color ="white"><b>MIN</b></font></td>
+				<td style="background-color:rgb(15, 5, 66)"><font color ="white"><b>MAX</b></font></td>
+			</tr>
+			<tr>
+				<td style="background-color:rgb(15, 5, 66)"><font color="white"><b>DIRETTA</b></font></td>
+				<td style="border: 1px solid" style="background-color:rgb(255, 255, 255)">1</td>
+				<td style="border: 1px solid" style="background-color:rgb(255, 255, 255)">1</td>
+			</tr>
+			<tr>
+				<td style="background-color:rgb(15, 5, 66)"><font color="white"><b>INVERSA</b></font></td>
+				<td style="border: 1px solid" style="background-color:rgb(255, 255, 255)">1</td>
+				<td style="border: 1px solid" style="background-color:rgb(255, 255, 255)">1</td>
+			</tr>
+		</table>
+	<p>
+	<h3 align="center"><font color="#0f0542">cliente tesserato </font><font color="#ed9909"><b>POSSIEDE </font></b><font color="#0f0542">tessera</font> >>> TIPO: <b>1:1</b></h4>
+	
+	<h4 align="justify" <div style="margin-left:300px; margin-right:300px;"></div>Un cliente tesserato possiede una sola tessera (obbligatorio) e una tessera è posseduta da un solo cliente tesserato (obbligatorio)</h4>
+	</p>
+
+
+
+
+
+
+
+
+
+
+
+	</body>
+</html>
